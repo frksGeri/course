@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Házi Feladat | 4</title>
-    <link rel="stylesheet" href="interface.css">
-
+    <title>Házi Feladat | 5</title>
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,6 +13,11 @@
         rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="media/favicon_coffee.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+        <link rel="stylesheet" href="interface.css">
 
 </head>
 
@@ -26,11 +30,11 @@
 
     <nav>
 
-        <a class="button menu" href="#footer">Ugrás az oldal végére</a>
-        <a class="button menu" href="#para1">Első paragrafus</a>
-        <a class="button menu" href="#para2">Második paragrafus</a>
-        <a class="button menu" href="#para3">Haramadik paragrafus</a>
-        <a class="button menu" href="para4.html" target="_blank">Negyedik paragrafus</a>
+        <a class="buttonR menu" href="#footer">Ugrás az oldal végére</a>
+        <a class="buttonR menu" href="#para1">Első paragrafus</a>
+        <a class="buttonR menu" href="#para2">Második paragrafus</a>
+        <a class="buttonR menu" href="#para3">Haramadik paragrafus</a>
+        <a class="buttonR menu" href="para4.html" target="_blank">Negyedik paragrafus</a>
 
     </nav>
 
@@ -39,8 +43,6 @@
         <div class="title">
 
             <h3> Röast Coffee</h3>
-
-            <div class="triangle"></div>
 
         </div>
         <p id="para1">A kávéfogyasztás egyre nő globálisan, a specialty, azaz újhullámos kávék – amik az érzékszervekre
@@ -60,9 +62,9 @@
             stílusokkal, különböző portfóliókkal.
         </p>
 
-           <img src="media/coffee1.jpeg" alt="coffee motivum">
+        <img src="media/coffee1.jpeg" alt="coffee motivum">
 
-           <a href="newsite.html">Nézzünk át egy másik oldalra</a>
+        <div> <a href="newsite.html">Nézzünk át egy másik oldalra</a></div>
         <p id="para2">Ehhez a különlegességnek számító, hazánkban egyetlen Stronghold S9X pörkölőgép adja az
             infrastruktúrát, amit a Röast megnyitóján meg is lehetett tekinteni. Ez az elektromos pörkölő hatalmas
             mozgásteret ad, mivel háromféle hőleadásra is képes, amivel a különböző kávék receptjeinek kialakításában
@@ -141,10 +143,6 @@
 
         </p>
 
-        <div class="triangle-end"></div>
-
-        <hr>
-
     </div>
     <div class="article-social-icon">
         <a class="icon darkmode" href="#" onclick="toggleDarkMode()">Dark Mode</a>
@@ -156,37 +154,48 @@
         <a class="icon pinterest" href="#">Pinterest</a>
     </div>
 
+    <h1>Cikk küldése ismerősnek</h1>
 
+    <div class="container">
+        <form class="row g-0 mx-auto col-lg-8 " novalidate>
+            <div class="col-12">
+                <input type="text" class="form-control" value="" placeholder="Név" minlength="6" maxlength="12"
+                    required>
+            </div>
 
-    <div class=""></div>
+            <div class="col-12 ">
+                <input type="tel" class="form-control" value="" placeholder="Telefonszám">
+            </div>
 
-    <h2>Cikk küldése ismerősnek</h2>
+            <div class="col-12 ">
+                <input type="email" class="form-control" value="" placeholder="Email" required>
+            </div>
 
-    <form action="#" class="form-container">
+            <div class="col-12 ">
+                <input type="date" class="form-control" value="">
+            </div>
 
-        <input type="text" id="name" placeholder="Név" minlength="6" maxlength="12" required>
+            <div class="col-12">
+                <textarea class="form-control" placeholder="Üzenet" style="height: 100px"></textarea>
+            </div>
 
-        <input type="tel" id="phone" placeholder="Telefonszám">
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-secondary" type="button">Küldés</button>
+            </div>
 
-        <input type="email" name="email" id="email" placeholder="Email" required>
-
-        <input type="date" name="bday" id="bday">
-
-        <textarea name="comment" id="comment" rows="4" cols="20" placeholder="Üzenet"></textarea>
-
-        <input type="submit" value="Küldés">
-    </form>
+        </form>
+    </div>
 
     <footer id="footer">
 
-        <a class="button end" href="#top">Vissza az oldal tetejére</a>
+        <a class="buttonR end" href="#top">Vissza az oldal tetejére</a>
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         function toggleDarkMode() {
-
-            document.body.classList.toggle("dark-mode");
+            document.body.classList.toggle('dark-mode');
         }
     </script>
 </body>
